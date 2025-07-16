@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Repo Setup Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="github-form" autocomplete="off">
+        <h2>GitHub Repository Credentials</h2>
+        <div class="form-group">
+            <label for="github_token">GitHub Token</label>
+            <input type="password" id="github_token" name="GITHUB_TOKEN" placeholder="your_github_token" required>
+        </div>
+        <div class="form-group">
+            <label for="repo_owner">Repository Owner</label>
+            <input type="text" id="repo_owner" name="REPO_OWNER" placeholder="your_username_or_org" required>
+        </div>
+        <div class="form-group">
+            <label for="repo_name">Repository Name</label>
+            <input type="text" id="repo_name" name="REPO_NAME" placeholder="your_repo_name" required>
+        </div>
+        <div class="form-group">
+            <label for="api_key">API Key</label>
+            <input type="password" id="api_key" name="API_KEY" placeholder="Token" required>
+        </div>
+        <button type="submit">Submit</button>
+        <div id="message"></div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
